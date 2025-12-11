@@ -1,0 +1,33 @@
+.header{
+    background-color: #FFFAEC;
+}
+.bg-section{
+    background-color: #FFFBEA;
+}
+
+.recipe-details{
+    position: absolute;
+    top:70%;
+    left:8%;
+   
+    
+}
+.container-w{
+    width:95%;
+    margin: auto;
+}
+
+.food-img{
+    height:600px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+  .btn-try{
+    
+  position: absolute;
+  top:100%;
+  
+  left:50%;
+  }

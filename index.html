@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+
+
+            <a class="navbar-brand" href="#">
+
+                <div class="d-flex gap-3">
+                    <div><i class="fa-solid fa-utensils fa-2x rounded-circle d-flex justify-content-center  align-items-center"
+                            style="color: #ffffff; background-color: #f54a00; width: 60px; height: 60px;"></i>
+                    </div>
+                    <div>
+                        What's For Dinner
+                        <br>
+                        Your daily meal inspiration
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+        </div>
+    </nav>
+
+    <section class="py-4 header bg-section">
+        <div class="container-w">
+            <div class="row bg-white" style="border: #FFEDD4 2px solid;">
+
+
+                <div class="col-5">
+                    <div class="inner position-relative">
+
+                        <figure>
+                            <img id="imgSource" src="photos/BBQ Pulled Pork.jpg" class="img-fluid food-img" alt="Food">
+                        </figure>
+
+                        <span class="rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <span id="rating">4.4</span>
+                            <span class="reviews">(<span id="reviews">198</span> reviews)</span>
+                        </span>
+
+                        <div
+                            class="recipe-details d-flex justify-content-center align-items-center gap-5 border border-2 p-3 bg-white rounded-4">
+
+                            <div class="text-center">
+                                <i class="fa-solid fa-clock fa-xl" style="color:#ff6900;"></i>
+                                <p class="text-muted">Prep Time</p>
+                                <h5 id="prepTime">30</h5>
+                            </div>
+
+                            <div class="text-center">
+                                <i class="fa-solid fa-fire-burner fa-xl" style="color:#fb2c36;"></i>
+                                <p class="text-muted">Cook Time</p>
+                                <h5 id="cookTime">60</h5>
+                            </div>
+
+                            <div class="text-center">
+                                <i class="fa-solid fa-users fa-xl" style="color:#3090d9;"></i>
+                                <p class="text-muted">Servings</p>
+                                <h5 id="servings">4</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-7  ">
+                    <div class="inner-2 py-4 position-relative">
+
+                        <div class="content ">
+                            <span id="difficulty" class="bg-secondary badge">Easy</span>
+                            <span id="region" class="bg-secondary badge">Asian</span>
+
+                            <h2 id="name">Vegetable Curry</h2>
+                            <p id="desc">Slow-cooked tender pork in smoky barbecue sauce</p>
+
+                            <div class="bg-danger text-white rounded-2 p-2 d-none" id="isExtended">
+                                <h5>Extended Preparation Time</h5>
+                                <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#ingredients-pane"
+                                    type="button">
+                                    <i class="fa-solid fa-list-check" style="color:#f54a00;"></i> Ingredients
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#instructions-pane"
+                                    type="button">
+                                    <i class="fa-solid fa-book-open" style="color:#364153;"></i> Instructions
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nutrition-pane"
+                                    type="button">
+                                    <i class="fa-solid fa-chart-pie" style="color:#364153;"></i> Nutrition
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#chefsTips-pane"
+                                    type="button">
+                                    <i class="fa-solid fa-lightbulb" style="color:#364153;"></i> Chef’s Tips
+                                </button>
+                            </li>
+                        </ul>
+
+
+                        <div class="tab-content ">
+
+
+                            <div class="tab-pane fade show active mt-3" id="ingredients-pane">
+                                <ul id="ingredients">
+                                    <li>
+                                        3 large eggplants, sliced
+
+                                    </li>
+                                    <li>
+                                        500g ground lamb
+
+
+                                    </li>
+                                    <li>400g canned tomatoes
+                                    </li>
+                                    <li>1 onion, diced
+
+                                    </li>
+                                    <li>3 cloves garlic, minced
+                                    </li>
+
+                                    <li> 500ml béchamel sauc</li>
+                                    <li>100g parmesan cheese</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane fade mt-3" id="instructions-pane">
+                                <ul id="instructions">
+                                    <li>
+                                        3 large eggplants, sliced
+
+                                    </li>
+                                    <li>
+                                        500g ground lamb
+
+
+                                    </li>
+                                    <li> Slice eggplants, salt them, and let sit for 30 minutes. Rinse and pat dry.
+
+                                    </li>
+                                    <li> Brush eggplant slices with olive oil, grill or bake until softened.
+
+
+                                    </li>
+                                    <li> Cook ground lamb with onion and garlic. Add tomatoes, cinnamon, oregano.
+                                        Simmer 20 minutes.
+
+                                    </li>
+
+                                    <li> Preheat oven to 180°C (350°F).</li>
+
+
+                                    <li>
+                                        Bake for 45 minutes until golden. Let rest 15 minutes before serving.
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="tab-pane fade mt-3" id="nutrition-pane">
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Calories</p>
+                                            <p><span id="calories">380</span> kcal</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Protein</p>
+                                            <p><span id="protein">36</span> g</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Carbohydrates</p>
+                                            <p><span id="carbohydrates">32</span> g</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Fat</p>
+                                            <p><span id="fat">42</span> g</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Fiber</p>
+                                            <p><span id="fiber">8</span> g</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="d-flex justify-content-between">
+                                            <p>Sodium</p>
+                                            <p><span id="sodium">820</span> mg</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade mt-3" id="chefsTips-pane">
+                                <ul id="chefsTips">
+                                    <li> Salt eggplant to remove bitterness.
+                                    </li>
+                                    <li> Don't skip the resting time - it helps set the layers.
+                                    </li>
+                                    <li> Use ground beef if lamb is unavailable.
+                                    </li>
+                                    <li> Make ahead and reheat for easier serving.
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <button class="btn btn-success btn-try " onclick="generateRandomMealIndex()">Try Another Recipe</button>
+
+        </div>
+    </section>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
